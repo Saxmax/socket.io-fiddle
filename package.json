@@ -6,11 +6,13 @@
   "license": "MIT",
   "dependencies": {
     "express": "~4.17.1",
-    "socket.io": "^3.1.0",
-    "socket.io-client": "^3.1.0"
+    "redis": "^3.0.2",
+    "socket.io": "^3.0.3",
+    "socket.io-msgpack-parser": "^3.0.1",
+    "socket.io-redis": "^6.0.1"
   },
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "client": "node client.js"
+    "start": "node server.js"
   }
 }
