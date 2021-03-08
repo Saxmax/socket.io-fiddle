@@ -185,7 +185,7 @@ Gamename.prototype.sendUpdateState = function(this, playerKeys) {
 	}
 };
 
-Bumper.prototype.createUpdateState = function(player) { // Create an update state catered to a specific player.
+Gamename.prototype.createUpdateState = function(player) { // Create an update state catered to a specific player.
 	let all = [];
 	let keys = Object.keys(this.players);
 	for (let p = 0, len = keys.length; p < len; p++) {
@@ -207,7 +207,7 @@ Bumper.prototype.createUpdateState = function(player) { // Create an update stat
 	return state;
 };
 
-Bumper.prototype.distanceBetween = function(a, b) { // Used to calculate which players are nearby, to limit data sent to each client.
+Gamename.prototype.distanceBetween = function(a, b) { // Used to calculate which players are nearby, to limit data sent to each client.
 	let dx = a.x - b.x;
 	let dy = a.y - b.y;
 	return (dx * dx + dy * dy);
